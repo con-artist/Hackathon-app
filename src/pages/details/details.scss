@@ -60,8 +60,6 @@
   align-items: center;
   padding: 33px 120px;
   position: relative;
-  
-  
 
   .overview {
     font-size: 22px;
@@ -71,15 +69,14 @@
     position: relative;
     top: 6px;
 
-    &::before{
-        content: "";
-        position: absolute;
-        width: 125px;
-        background-color: rgb(68, 146, 76);
-        height: 4px;
-        top: 51px;
-        left: -10px;
-
+    &::before {
+      content: "";
+      position: absolute;
+      width: 125px;
+      background-color: rgb(68, 146, 76);
+      height: 4px;
+      top: 51px;
+      left: -10px;
     }
   }
 
@@ -98,7 +95,7 @@
   }
 }
 
-.description-section{
+.description-section {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -106,7 +103,62 @@
   padding: 50px 120px;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(100,96,125);
+  color: rgb(100, 96, 125);
   position: relative;
   box-shadow: 0 0 8px 12px rgb(229 236 241);
 }
+
+@media only screen and (max-width: 1025px) {
+  .details-section {
+    .level {
+      img {
+        padding-bottom: 4px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .description-section {
+    padding: 50px 60px;
+  
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .details-section {
+    padding: 70px;
+  }
+  .edit-section {
+    .options {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      position: relative;
+      top: 10px;
+      left: 60px;
+      .btn-success {
+        padding: 8px 28px;
+        border-radius: 10px;
+      }
+      .btn-outline-danger {
+        padding: 8px 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .details-section {
+    padding: 45px;
+  }
+  .edit-section {
+    padding: 33px 75px;
+    .options {
+      width: 220px;
+    }
+  }
+  .description-section {
+    padding: 50px 35px;
+  
+  }
+}
+
