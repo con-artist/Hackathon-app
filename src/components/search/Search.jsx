@@ -28,7 +28,10 @@ const Search = () => {
       }
     };
     document.addEventListener("click", handleOutsideClick);
-  });
+    return()=>{
+      document.removeEventListener("click",handleOutsideClick);
+    }
+  },[setIsOpen]);
 
 
   useEffect(()=>{
