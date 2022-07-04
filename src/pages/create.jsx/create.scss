@@ -7,6 +7,7 @@
   justify-content: center;
   background-color: white;
   color: black;
+  box-sizing: border-box;
 
   .header-section {
     background-color: rgb(248, 249, 253);
@@ -14,6 +15,7 @@
     font-weight: 700;
     margin-top: 0px;
     padding: 42px 105px;
+    box-sizing: border-box;
   }
 
   .details-section {
@@ -23,6 +25,7 @@
     width: 100%;
     margin-top: 11px;
     padding: 10px 105px;
+    box-sizing: border-box;
 
     .name {
       margin-bottom: 30px;
@@ -269,7 +272,7 @@
   
     .header-section {
       font-size: 35px;
-      padding: 30px 60px;
+      padding: 30px 30px;
     }
   
     .details-section {
@@ -282,7 +285,7 @@
         }
         .value {
           input {
-            width: 340px;
+            width: 348px;
             font-size: 20px;
           }
         }
