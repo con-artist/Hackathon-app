@@ -406,11 +406,13 @@
     .sort{
       width: 120px;
       position:relative;
-      left: 94px;
+      left: 40px;
     
       .form-select{
+        width: 100%;
         font-size: 12px;
         height: 29px;
+        position: relative;
 
         option{
           margin-top: 10px;
@@ -443,4 +445,14 @@
         }
     }
 }
+}
+
+@media only screen and (max-width: 450px){
+  .search{
+    .sort{
+      width: 75px;
+      margin: 0px;
+    }
+  }
+
 }
