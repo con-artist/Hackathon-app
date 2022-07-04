@@ -253,7 +253,9 @@
 }
 @media only screen and (max-width: 600px){
   .details {
+
     .details-section {
+      padding: 10px 85px;
       .level {
         .value {
           select {
@@ -272,12 +274,12 @@
   
     .header-section {
       font-size: 35px;
-      padding: 30px 30px;
+      padding: 30px 15px;
     }
   
     .details-section {
       margin-top: 5px;
-      padding: 10px 25px;
+      padding: 10px 25px 10px 15px;
 
       .name {
         .heading {
@@ -285,8 +287,8 @@
         }
         .value {
           input {
-            width: 348px;
-            font-size: 20px;
+            width: 275px;
+            font-size: 16px;
           }
         }
       }
@@ -303,7 +305,7 @@
         .value {
           height: 40%;
           textarea {
-            width: 100%;
+            width: 90%;
             height: 150px;
           }
         }
@@ -315,7 +317,7 @@
         }
         .value {
           textarea {
-            width: 100%;
+            width: 90%;
             height: 200px;
 
           }
@@ -357,7 +359,7 @@
   flex-grow: 1;
   flex-shrink: 0;
   border: thin solid gray;
-  font-size: 20px;
+  font-size: 14px;
   border-radius: 6px;
   width: 100%;
   padding: 4px;
