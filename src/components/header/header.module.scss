@@ -1,0 +1,18 @@
+@use '../../styles/abstracts/mixins.scss' as *;
+
+
+.header {
+    @include flex(false,center);
+    gap: 1rem;
+
+    .slogan{
+        width: 5rem;
+        img{
+            width: 100%;
+        }
+    }
+
+    .name{
+        
+    }
+}

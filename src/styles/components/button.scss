@@ -1,0 +1,30 @@
+@use '../abstracts/variables.scss' as *;
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem;
+
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.challenge-btn{
+    background-color: $btn-green;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $white;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

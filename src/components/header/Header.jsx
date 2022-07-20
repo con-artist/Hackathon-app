@@ -1,15 +1,14 @@
-import React from 'react';
-import './Header.scss';
+import styles from './header.module.scss';
 import logo from '../../assets/logo/logo.png' 
 
 const Header = () => {
   return (
-    <>
-    <div className="header">
-        <img src={logo} alt="" />
-        <div className='header__name'>DPhi</div>
-    </div>
-    </>
+    <header className={`container ${styles.header}`}>
+      <div className={styles.slogan}>
+        <img src={logo} alt="logo" />
+      </div>
+      <div className={`link-bold-m ${styles.name}`}>DPhi</div>
+    </header>
   )
 }
 

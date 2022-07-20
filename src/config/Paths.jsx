@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
 import Details from '../pages/details/Details';
-import Create from '../pages/create.jsx/Create';
+import Create from '../pages/create/Create';
 import Edit from '../pages/editPage/Edit';
 
 const Paths = () => {
