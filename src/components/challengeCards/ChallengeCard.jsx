@@ -1,6 +1,6 @@
 import styles from './challengeCard.module.scss';
 import { useEffect, useReducer } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -111,10 +111,12 @@ const ChallengeCard = (props) => {
           </div>
           <div className={`headline-bold-s ${timer.status === "Past" ? "":"disactive"} ${styles.endtime}`}>{timer.time}</div>
         </div>
-        <div className={`challenge-btn ${styles.cta}`}>
-          <i className="bi bi-check2-circle"></i>
-          <div>Participate Now</div>
-        </div>
+        <Link className={styles.link} to={`/details/?id=${props.id}`}>
+          <div className={`challenge-btn ${styles.cta}`}>
+            <i className="bi bi-check2-circle"></i>
+            <div>Participate Now</div>
+          </div>
+        </Link>
       </div>
     </article>
   )

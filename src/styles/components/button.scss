@@ -23,8 +23,9 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: $white;
-
+    transition: .5s;
     &:hover{
         cursor: pointer;
+        background-color: darken($btn-green, 10%);
     }
 }

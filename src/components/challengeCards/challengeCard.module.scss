@@ -94,9 +94,14 @@
             }
         }
 
-        .cta{
-            @include flex(false,center);
-            gap: .5rem;
+        .link{
+            color: $white;
+            text-decoration: none;
+            .cta{
+                @include flex(false,center);
+                gap: .5rem;
+            }
         }
+       
     }
 }

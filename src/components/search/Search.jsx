@@ -178,6 +178,7 @@ const Search = () => {
             cards.map((item) => (
               <ChallengeCard
                 key={item.id}
+                id={item.id}
                 image={item.image}
                 title={item.name}
                 startDate={item.start_time}
