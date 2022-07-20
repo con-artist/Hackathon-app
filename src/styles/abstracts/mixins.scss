@@ -1,0 +1,56 @@
+// BOOTSTRAP MEDIA QUIRES ////
+
+@mixin media($dimension) {
+  @if $dimension == sm {
+      @media (min-width:46.875em){   // 750px
+          @content;
+      }
+  }@else if $dimension == lg  {
+      @media (min-width:60.625em){   // 970px
+          @content;
+      }
+  }@else if $dimension == xlg {
+      @media (min-width:75em){   // 1200px
+          @content;
+      }
+  }
+  
+}
+
+
+
+// FLEX MIXINS //
+@mixin flex-variant($display, $direction: false, $align: false, $justify: false, $wrap: false) {
+    display: $display;
+  
+    @if $direction {
+      flex-direction: $direction;
+    }
+  
+    @if $align {
+      align-items: $align;
+    }
+  
+    @if $justify {
+      justify-content: $justify;
+    }
+  
+    @if $wrap {
+      flex-wrap: $wrap;
+    }
+  
+    // fix
+    & > * {
+      min-width: 0;
+    }
+  }
+  
+  @mixin flex($direction: false, $align: false, $justify: false, $wrap: false) {
+    @include flex-variant(flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
+  }
+  
+  @mixin inline-flex($direction: false, $align: false, $justify: false, $wrap: false) {
+    @include flex-variant(inline-flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
+  }
+
+////////////////////////////////////////////////////////////////////
