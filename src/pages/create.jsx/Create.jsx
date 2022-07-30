@@ -39,7 +39,7 @@ const Create = () => {
       
     };
 
-    if (data.name !== "" && data.desc !== "" && data.image !== "") {
+    if (data.name != "" && data.desc != "" && data.image != "") {
       Card_data.push(data);
       // console.log(Card_data);
       navigate('/');

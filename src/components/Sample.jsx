@@ -6,7 +6,7 @@ import img5 from '../assets/cardimage/image5.png';
 import img6 from '../assets/cardimage/image6.png';
 
 
-const cardData=[
+const Card_data=[
     {
         id:'sample1',
         image:img1,
@@ -20,8 +20,8 @@ const cardData=[
         Your Task is to build an Image Classification Model using CNN that classifies to which class of weather each
         image belongs to.`,
         level:'Easy',
-        start_time: '07-29-2022 15:20:00',
-        end_time: '07-25-2022 00:00:00',
+        start_time: '06-23-2022 15:20:00',
+        end_time: '06-25-2022 00:00:00',
         status: '',
         visible:true,
         desc:"ldentify the class to which each butterfly belongs to",
@@ -42,8 +42,8 @@ const cardData=[
         Your Task is to build an Image Classification Model using CNN that classifies to which class of weather each
         image belongs to.`,
         level:'Medium',
-        start_time: '07-19-2022 00:00:00',
-        end_time: '07-23-2022 15:22:00',
+        start_time: '06-21-2022 00:00:00',
+        end_time: '06-21-2022 15:22:00',
         status: '',
         visible:true,
         desc:"ldentify the class to which each butterfly belongs to",
@@ -141,4 +141,4 @@ const cardData=[
     
 ]
 
-export default cardData;
+export default Card_data;
